@@ -27,7 +27,7 @@ class HippogriffTest < Minitest::Test
 
   def test_when_created_its_sack_is_empty
     hippogriff = Hippogriff.new("jane", :magenta)
-    assert hippogriff.moonrocks.empty?
+    assert_equal true, hippogriff.moonrocks.empty?
   end
 
   def test_when_it_flies_it_collects_a_unique_moonrock

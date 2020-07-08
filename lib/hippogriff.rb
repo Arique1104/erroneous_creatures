@@ -6,7 +6,7 @@ class Hippogriff
   def initialize(name, color)
     @name = name
     @color = color
-    moonrocks = []
+    @moonrocks = []
   end
 
   def fly(rock)
@@ -16,6 +16,10 @@ class Hippogriff
 
   def sack
     @moonrocks.to_h
+  end
+
+  def empty?
+    @moonrocks.count > 0
   end
 
 end
@@ -33,5 +37,6 @@ class Moonstone
   def magic?
     @magicalness
   end
+
 
 end
