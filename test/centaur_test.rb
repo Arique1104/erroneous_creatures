@@ -23,13 +23,13 @@ class CentaurTest < Minitest::Test
   end
 
   def test_it_makes_a_horse_sound_when_it_runs
-    skip
+    # skip
     centaur = Centaur.new("George","Palomino")
     assert_equal "Clop clop clop clop!!!", centaur.run
   end
 
   def test_when_first_created_it_is_not_cranky
-    skip
+    # skip
     centaur = Centaur.new("George","Palomino")
     refute centaur.cranky?
   end
