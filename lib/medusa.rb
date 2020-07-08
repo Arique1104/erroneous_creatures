@@ -8,13 +8,9 @@ class Medusa
     @statues = []
   end
 
-  def stare(x)
-    x.stone = true
-    @statues = x
-  end
-
-  def statues
-    @statues
+  def stare(victim)
+    @statues << victim
+    victim.stone = true
   end
 
 end
