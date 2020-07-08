@@ -5,7 +5,6 @@ require './lib/hobbit'
 
 class HobbitTest < Minitest::Test
   def test_it_has_a_name
-    skip
     hobbit = Hobbit.new("Bilbo")
     assert_equal "Bilbo", hobbit.name
   end
